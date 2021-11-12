@@ -7,8 +7,62 @@
     <title>My Budget app</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
+ 
   <body>
-    <h1>$ Dollar signs all I see is dollar signs $</h1>
+    <h1>- my budget app -</h1>
+    <div class="container">
+      <div class="money">
+       
+      <div class="income">
+    <h3>Income</h3>
+    <p style="color: green; font-size: 25px;">+ $ 0</p>
+      </div>
+
+    <div class="budget">
+    <h3>Your Money</h3>
+    <p>$ 0</p>
+    </div>
+
+     <div class="expenses">
+    <h3>Expenses</h3>
+    <p style="color: red; font-size: 25px;"> - $ 0</p>
+    
+  </div>
+  </div>
+    <form id="spendings">
+    <input type="text" onfocus="this.value=''" value="Your income"/></input>
+    <button type="submit">Add income</button>
+
+    <br>
+
+    <input type="text" onfocus="this.value=''" value="Your expenses"/></input>
+    <button type="submit">Add expense</button>
+    </form>
+  </div>
+  <div class="listcontainer">
+    <div class="spending-list">
+    <div class="list-in">
+      <ul><h3>Money earned</h3> 
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+    <div class="list-out">
+     <ul><h3>Money spent</h3>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+       
+     </ul>
+    </div>
+    </div>
+    </div>
+
   </body>
   <script src="mybudgetapp.js"></script>
 </html>

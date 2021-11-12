@@ -1,5 +1,106 @@
+@font-face {
+  font-family: Raleway;
+  src: url(static/Raleway);
+}
+
 body {
-  color: green;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  background-color: whitesmoke;
+  color: goldenrod;
+  font-family: Raleway;
+  text-align: center;
+  font-weight: normal;
+}
+
+h1 {
+  font-weight: 400;
+}
+h3 {
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+p {
+  font-size: 40px;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 50px 0px;
+  margin-top: 30px;
+  background-image: url("media/single_dollar.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.money {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 700px;
+}
+
+form {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: left;
+  margin-top: 50px;
+}
+
+input {
+  background-color: goldenrod;
+  opacity: 90%;
+  width: 500px;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: whitesmoke;
+}
+
+button {
+  background-color: goldenrod;
+  opacity: 80%;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100px;
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+.listcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.spending-list {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 700px;
+  color: rgb(68, 68, 68);
+}
+.spending-list h3 {
+  color: rgb(68, 68, 68);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
 }
