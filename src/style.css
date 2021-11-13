@@ -5,7 +5,7 @@
 
 body {
   background-color: whitesmoke;
-  color: goldenrod;
+  color: rgb(70, 69, 68);
   font-family: Raleway;
   text-align: center;
   font-weight: normal;
@@ -13,6 +13,7 @@ body {
 
 h1 {
   font-weight: 400;
+  letter-spacing: 4px;
 }
 h3 {
   font-weight: normal;
@@ -43,18 +44,35 @@ p {
   justify-content: space-between;
   width: 80%;
   max-width: 700px;
+  letter-spacing: 1px;
 }
 
+
 form {
-  margin: 0 auto;
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
   text-align: left;
   margin-top: 50px;
 }
+.moneyin,
+.moneyout {
+  display: flex;
+  flex-direction: row;
+  justify-content:right;
+}
 
 input {
-  background-color: goldenrod;
-  opacity: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(64, 71, 61);
+  opacity: 85%;
   width: 500px;
   padding: 10px;
   border: none;
@@ -68,9 +86,9 @@ input::placeholder {
 }
 
 button {
-  background-color: goldenrod;
+  background-color: rgb(64, 71, 61);
   opacity: 80%;
-  color: white;
+  color: whitesmoke;
   border: none;
   padding: 10px;
   width: 100px;
@@ -87,14 +105,24 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  letter-spacing: 1px;
 }
 
 .spending-list {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  flex-wrap: wrap;
+  width: 40%;
   max-width: 700px;
+  text-align: left;
+  padding: 20px;
   color: rgb(68, 68, 68);
+}
+
+.spending-list ul {
+  display: inline-block;
+  margin-block-start: 0;
+  padding-inline-start: 0;
 }
 .spending-list h3 {
   color: rgb(68, 68, 68);
@@ -103,4 +131,10 @@ button:hover {
 
 ul {
   list-style: none;
+}
+.fa-trash-alt {
+  font-size: 11px;
+}
+.fa-trash-alt:hover {
+  color: goldenrod;
 }
