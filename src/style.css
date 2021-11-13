@@ -47,10 +47,10 @@ p {
   letter-spacing: 1px;
 }
 
-
 form {
   display: flex;
   flex-direction: column;
+
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -58,11 +58,13 @@ form {
   text-align: left;
   margin-top: 50px;
 }
+
 .moneyin,
 .moneyout {
   display: flex;
   flex-direction: row;
-  justify-content:right;
+  width: 90%;
+  max-width: 700px;
 }
 
 input {
@@ -70,15 +72,14 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   background-color: rgb(64, 71, 61);
   opacity: 85%;
-  width: 500px;
+  width: 550px;
   padding: 10px;
   border: none;
   border-radius: 2px;
   color: white;
-  margin-bottom: 10px;
+  margin-right: 5px;
 }
 
 input::placeholder {
@@ -90,8 +91,7 @@ button {
   opacity: 80%;
   color: whitesmoke;
   border: none;
-  padding: 10px;
-  width: 100px;
+  width: 120px;
 }
 
 button:hover {
