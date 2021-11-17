@@ -1,0 +1,24 @@
+{
+  "name": "mybudgetapp",
+  "version": "1.0.0",
+  "description": "Under construction 👷🏽‍♀️",
+  "main": "mybudgetapp.js",
+  "scripts": {
+    "start": "node-sass  sass/main.scss css/main.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariarosariojson/mybudgetapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariarosariojson/mybudgetapp/issues"
+  },
+  "homepage": "https://github.com/mariarosariojson/mybudgetapp#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
