@@ -1,6 +1,12 @@
+@import "./variable.scss";
+@import "./global.scss";
+@import "./partials/button";
+@import "./partials/forms";
+@import "./partials/section_1";
+
 @font-face {
   font-family: Raleway;
-  src: url(static/Raleway);
+  src: url(./Raleway/);
 }
 
 body {
@@ -34,7 +40,7 @@ p {
   align-items: center;
   padding: 50px 0px 50px 0px;
   margin-top: 30px;
-  background-image: url("media/single_dollar.jpg");
+  background-image: url("/src/media/single_dollar.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -47,55 +53,12 @@ p {
   letter-spacing: 1px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
 
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  text-align: left;
-  margin-top: 50px;
-}
-
-.moneyin,
-.moneyout {
+.moneyInput {
   display: flex;
   flex-direction: row;
   width: 90%;
   max-width: 700px;
-}
-
-input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(64, 71, 61);
-  opacity: 85%;
-  width: 550px;
-  padding: 10px;
-  border: none;
-  border-radius: 2px;
-  color: white;
-  margin-right: 5px;
-}
-
-input::placeholder {
-  color: whitesmoke;
-}
-
-button {
-  background-color: rgb(64, 71, 61);
-  opacity: 80%;
-  color: whitesmoke;
-  border: none;
-  width: 120px;
-}
-
-button:hover {
-  opacity: 100%;
 }
 
 .listcontainer {
@@ -124,6 +87,7 @@ button:hover {
   margin-block-start: 0;
   padding-inline-start: 0;
 }
+
 .spending-list h3 {
   color: rgb(68, 68, 68);
   font-weight: 600;

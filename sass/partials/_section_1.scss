@@ -1,0 +1,13 @@
+@mixin center {
+  margin: auto 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.money {
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  @include center();
+}
+
+// extend/inheritance

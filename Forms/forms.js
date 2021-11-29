@@ -22,8 +22,8 @@ function countAmount(event) {
 
     if(select.value=="+") {
         document
-        .querySelector(".listIn")
-        .innerHTML=`<li class="listIn"> ${description}: ${num}</li>`;
+        .querySelector(".income")
+        .innerHTML=`<li class="earned_one"> ${description}: ${num}</li>`;
 
         listIn.push(num);
         console.log(listIn);
@@ -32,8 +32,8 @@ function countAmount(event) {
 
     else if(select.value=="-") {
         document
-        .querySelector(".listOut")
-        .innerHTML=`<li class="listOut"> ${description}: ${num}kr</li>`;
+        .querySelector(".expenses")
+        .innerHTML=`<li class="spent_one"> ${description}: ${num}</li>`;
 
         listOut.push(num);
         console.log(listOut);
@@ -52,7 +52,5 @@ function countAmount(event) {
         costSum += e;
     })
 
-    document.querySelector(".out").innerHTML = costSum;
-    document.querySelector(".budget").innerHTML = incomeSum - costSum;
-    document.querySelector(".in").innerHTML = incomeSum;
+    document.querySelector(".budget").textContent = incomeSum - costSum;
 }
