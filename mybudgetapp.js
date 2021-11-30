@@ -23,7 +23,8 @@ function countAmount(event) {
     if(select.value=="+") {
         document
         .querySelector(".listIn")
-        .innerHTML=`<li class="listIn"> ${description}: ${num}</li>`;
+        .innerHTML += `<li> ${description}: ${num}SEK</li>`;
+        const divIn = document.querySelector(".listIn");
 
         listIn.push(num);
         console.log(listIn);
@@ -33,11 +34,12 @@ function countAmount(event) {
     else if(select.value=="-") {
         document
         .querySelector(".listOut")
-        .innerHTML=`<li class="listOut"> ${description}: ${num}kr</li>`;
+        .innerHTML += `<li> ${description}: ${num}SEK</li>`;
 
         listOut.push(num);
         console.log(listOut);
     }
+
     else if(select.value=="choose") {
         alert("Please, type in + or -");
     }
@@ -49,10 +51,16 @@ function countAmount(event) {
 
     listOut.map((e) => {
         console.log(parseFloat(e));
-        costSum += e;
+        costSum += parseFloat(e);
     })
 
     document.querySelector(".out").innerHTML = costSum;
     document.querySelector(".budget").innerHTML = incomeSum - costSum;
     document.querySelector(".in").innerHTML = incomeSum;
+
 }
+function addToLocalStorage(event) {
+    event.preventDefault();
+    console.log(event);
+}
+document.querySelector(".addToList").addEventListener("click", addToLocalStorage)

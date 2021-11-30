@@ -17,42 +17,49 @@
        
       <div>
     <h3>Income</h3>
-    <p style="color: green; font-size: 25px;">+ $<span class="in"></span></p>
+    <p style="color: green; font-size: 25px;">+ <span class="in"></span>SEK</p>
       </div>
 
     <div class="yourMoney">
     <h3 style="font-weight: bold;">Your Money</h3>
-    <p>$<span class="budget"></span> </p>
+    <p><span class="budget"></span>SEK</p>
     </div>
 
      <div>
     <h3>Expenses</h3>
-    <p style="color: red; font-size: 25px;">- $<span class="out"></span></p>
+    <p style="color: red; font-size: 25px;">- <span class="out"></span>SEK</p>
     </div>
   </div>
 
   <div class="moneyInput">
   <form id="spendings">
     
-      <select class="pick" required>
+      <select class="choose" required>
         <option value="choose">Income or Expenses</option>
         <option value="+">Income</option>
         <option value="-">Expenses</option>
       </select>
-
-      <input type="text" class="description" onfocus="this.value=''" value="Items sold or bought" required />
+<br>
+      <input type="text" class="description" onfocus="this.value=''" value="Items sold or bought" required>
       <br>
-      <input type="text" class="num" onfocus="this.value=''" value="Amount" required />
-      <button class="">Add</button>
+      <input type="number" class="num" onfocus="this.value=''" placeholder="Amount" required>
+      <br>
+      <button class="addToList">Add</button>
   </form>
 </div>
 
   <div class="listcontainer">
     <div class="spending-list">
-      <h3>Money earned</h3> 
-    <div class="listIn"></div>
-    <h3>Money spent</h3>
-    <div class="listOut"></div>
+       
+    <div>
+      <h3>Money earned</h3>
+      <span class="listIn" style="color: green;"></span>
+    </div>
+    
+    <div >
+      <h3>Money spent</h3>
+      <span class="listOut" style="color: red;"></span>
+    </div>
     </div>
     </div>
 

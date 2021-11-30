@@ -35,14 +35,16 @@ p {
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
+  height: 450px;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   padding: 50px 0px 50px 0px;
   margin-top: 30px;
   background-image: url("/src/media/single_dollar.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 .money {
@@ -51,24 +53,41 @@ p {
   width: 80%;
   max-width: 700px;
   letter-spacing: 1px;
+  margin-top: 170px;
+  margin-bottom: 100px;
 }
 
+.choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(64, 71, 61);
+  opacity: 90%;
+  width: 40%;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
 
 .moneyInput {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   width: 90%;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .listcontainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 100px;
   letter-spacing: 1px;
+  list-style: none;
 }
 
 .spending-list {
@@ -93,9 +112,6 @@ p {
   font-weight: 600;
 }
 
-ul {
-  list-style: none;
-}
 .fa-trash-alt {
   font-size: 11px;
 }

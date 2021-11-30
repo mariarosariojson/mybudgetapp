@@ -1,10 +1,9 @@
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 600px;
   text-align: left;
   margin-top: 50px;
 }
@@ -15,13 +14,12 @@ input {
   justify-content: center;
   align-items: center;
   background-color: rgb(64, 71, 61);
-  opacity: 85%;
-  width: 550px;
+  opacity: 90%;
+  width: 100%;
   padding: 10px;
   border: none;
   border-radius: 2px;
   color: white;
-  margin-right: 5px;
 }
 
 input::placeholder {
