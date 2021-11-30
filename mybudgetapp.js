@@ -57,10 +57,4 @@ function countAmount(event) {
     document.querySelector(".out").innerHTML = costSum;
     document.querySelector(".budget").innerHTML = incomeSum - costSum;
     document.querySelector(".in").innerHTML = incomeSum;
-
 }
-function addToLocalStorage(event) {
-    event.preventDefault();
-    console.log(event);
-}
-document.querySelector(".addToList").addEventListener("click", addToLocalStorage)
