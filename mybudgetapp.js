@@ -12,13 +12,13 @@ function countAmount(event) {
  let incomeSum = 0;
 
  const select = document.querySelector("select");
- console.log(select.value);
+ // console.log(select.value);
 
     const description = document.querySelector(".description").value;
-    console.log(description);
+    // console.log(description);
 
     const num = document.querySelector(".num").value;
-    console.log(num);
+    // console.log(num);
 
     if(select.value=="+") {
         document
@@ -27,7 +27,7 @@ function countAmount(event) {
         const divIn = document.querySelector(".listIn");
 
         listIn.push(num);
-        console.log(listIn);
+        //console.log(listIn);
         
     }
 
@@ -37,7 +37,7 @@ function countAmount(event) {
         .innerHTML += `<li> ${description}: ${num}SEK</li>`;
 
         listOut.push(num);
-        console.log(listOut);
+        // console.log(listOut);
     }
 
     else if(select.value=="choose") {
