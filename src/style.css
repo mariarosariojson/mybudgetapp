@@ -96,3 +96,44 @@ ul {
 .fa-trash-alt:hover {
   color: goldenrod;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  margin-top: 50px;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(64, 71, 61);
+  opacity: 90%;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+
+input::placeholder {
+  color: whitesmoke;
+}
+
+button {
+  background-color: rgb(64, 71, 61);
+  opacity: 90%;
+  color: whitesmoke;
+  border: none;
+  width: 120px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 100%;
+}
